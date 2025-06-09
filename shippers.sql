@@ -2,7 +2,11 @@
 
 We have a table called Shippers. Return all the fields from all the shippers
 
---Create table
+--Hint
+The standard format for a select statement that returns all columns and
+all rows is “Select * from TableName”.
+
+--Expected Results
 Create table Shippers (
 ShipperID INT Primary Key,
 CompmanyName VARCHAR(50),
@@ -14,5 +18,5 @@ INSERT INTO Shippers (ShipperID, CompmanyName, Phone) VALUES
 (3, 'Federal Shipping', '(503) 555-9931')
 
 
---Solve
+--Select all from Shippers
 SELECT * FROM Shippers
