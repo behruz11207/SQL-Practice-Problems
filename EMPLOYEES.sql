@@ -8,6 +8,8 @@ To filter out only certain rows from a table, use a Where clause. The
 format for a where clause with a string filter is:
 Where FieldName = 'Filter Text'
 
+--Expected Results
+  
 CREATE TABLE EMPLOYEES (
 EmployessID INT Primary Key,
 FirstName VARCHAR(50),
@@ -23,6 +25,6 @@ INSERT INTO EMPLOYEES (EmployessID, FirstName, LastName, Title, HireDate) VALUES
 (5, 'Robert', 'King', 'Sales Representative', '2012-01-02 00:00:00.000'),
 (6, 'Anne', 'Dodsworth', 'Sales Representative', '2012-11-15 00:00:00.000')
 
---Solve
+-- Who are Sales Representative'
 SELECT e.FirstName, e.LastName, e.HireDate FROM EMPLOYEES e
 WHERE e.Title = 'Sales Representative'
